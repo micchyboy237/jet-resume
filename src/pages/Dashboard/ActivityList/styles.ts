@@ -10,7 +10,7 @@ export const ActivityTable = styled.table`
 
 export const ActivityTableHeader = styled.th`
   border-bottom: 1px solid ${({ theme }) => theme.colors.tableRowBorder};
-  padding: 1rem 0.75rem; /* Increased padding */
+  padding: 1rem 0.5rem; /* Increased padding */
   text-align: left;
   background-color: ${({ theme }) => theme.colors.tableHeadBackground};
 `
@@ -26,11 +26,12 @@ export const ActivityTableRow = styled.tr`
 `
 
 export const ActivityTableData = styled.td`
-  padding: 1rem 0.75rem; /* Increased padding */
+  padding: 1rem 0.5rem; /* Increased padding */
   border-bottom: 1px solid ${({ theme }) => theme.colors.tableRowBorder};
 `
 
 export const ActivityStatus = styled.span<{ activity: string }>`
+  white-space: nowrap;
   padding: 0.5rem 1rem; /* Increased padding */
   margin-right: 0.5rem; /* Added margin for separation */
   border-radius: 0.75rem;
