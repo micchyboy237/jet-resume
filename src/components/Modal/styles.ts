@@ -17,13 +17,13 @@ export const ModalContent = styled.div`
   background: ${({ theme }) => theme.colors.modalBackground};
   border-radius: 0.5rem;
   width: 90%; // Use relative units for width
-  height: 90%; // Use relative units for height
+  height: auto; // Use relative units for height
+  max-height: 90%; // Use relative units for max-height
   overflow-y: auto; // Enable scrolling when content overflows
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   animation: fadeIn 0.3s ease-in-out;
 
   @media (min-width: 768px) {
-    height: auto;
     max-width: 500px;
   }
 
