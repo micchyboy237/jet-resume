@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+create_file_structure.sh
+copy_for_prompt.sh

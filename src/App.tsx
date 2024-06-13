@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import ActivityList from './pages/Dashboard/ActivityList'
+import ProfileCard from './pages/Dashboard/ProfileCard'
+import SettingsPanel from './pages/Dashboard/SettingsPanel'
+import StatisticsGraph from './pages/Dashboard/StatisticsGraph'
+import { AppBody, AppContainer, AppHeader, PageTitle } from './styles'
+import GlobalStyle from './theme/GlobalStyle'
+import { ThemeProviderWrapper } from './theme/ThemeContext'
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ThemeProviderWrapper>
+      <GlobalStyle />
+      <AppContainer>
+        <AppHeader>
+          <PageTitle>Dashboard</PageTitle>
+          <SettingsPanel />
+        </AppHeader>
+        <AppBody>
+          <ProfileCard />
+          <StatisticsGraph />
+          <ActivityList />
+        </AppBody>
+      </AppContainer>
+    </ThemeProviderWrapper>
+  )
 }
 
-export default App;
+export default App
