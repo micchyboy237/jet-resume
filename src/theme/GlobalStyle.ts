@@ -12,6 +12,11 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${({ theme }) => theme.fonts.main};
   }
 
+  body.modal-open {
+    overflow: hidden;
+  }
+
+
   input, textarea, button {
     font-family: ${({ theme }) => theme.fonts.main};
   }

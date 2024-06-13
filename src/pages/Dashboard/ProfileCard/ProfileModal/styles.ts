@@ -1,15 +1,9 @@
 import styled from 'styled-components'
 
 export const Form = styled.form`
-  width: 100%;
-  max-width: 90vw;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-
-  @media (min-width: 576px) {
-    max-width: 500px;
-  }
 `
 
 export const FormField = styled.div`
@@ -18,12 +12,26 @@ export const FormField = styled.div`
   flex-direction: column;
 `
 
+export const FormImage = styled.img`
+  margin-top: 1.25rem;
+  align-self: center;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+
+  @media (min-width: 768px) {
+    width: 10rem;
+    height: 10rem;
+  }
+`
+
 export const Label = styled.label`
   display: block;
   margin-bottom: 0.5rem;
   font-family: ${({ theme }) => theme.fonts.main};
-  font-weight: bold;
-  color: ${({ theme }) => theme.colors.text};
+  font-weight: 600;
+  color: ${({ theme }) => theme.colors.textGray};
 `
 
 export const Input = styled.input`

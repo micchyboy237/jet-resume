@@ -51,12 +51,17 @@ export const ProfileCardInfo = styled.div`
 `
 
 export const ProfileCardImage = styled.img`
-  width: 10rem;
-  height: 10rem;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
   border: 0.125rem solid ${({ theme }) => theme.colors.primary};
+  width: 8rem;
+  height: 8rem;
+
+  @media (min-width: 768px) {
+    width: 10rem;
+    height: 10rem;
+  }
 `
 
 export const ProfileCardBio = styled.p`

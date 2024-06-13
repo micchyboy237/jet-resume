@@ -7,6 +7,7 @@ import {
   FileInput,
   Form,
   FormField,
+  FormImage,
   Input,
   Label,
   TextArea,
@@ -58,18 +59,7 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, closeModal }) => {
             onChange={handleFileChange}
           />
           {formState.profilePicture && (
-            <img
-              src={formState.profilePicture}
-              alt="Profile Preview"
-              style={{
-                marginTop: '10px',
-                maxWidth: '100px',
-                maxHeight: '100px',
-                borderRadius: '50%',
-                objectFit: 'cover',
-                alignSelf: 'center',
-              }}
-            />
+            <FormImage src={formState.profilePicture} alt="Profile Preview" />
           )}
         </FormField>
         <FormField>

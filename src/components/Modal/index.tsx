@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import {
   CloseButton,
   ModalBackdrop,
+  ModalBody,
   ModalContent,
   ModalHeader,
   ModalTitle,
@@ -36,7 +37,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
           <ModalTitle>{title}</ModalTitle>
           <CloseButton onClick={onClose}>&times;</CloseButton>
         </ModalHeader>
-        {children}
+        <ModalBody>{children}</ModalBody>
       </ModalContent>
     </ModalBackdrop>
   )

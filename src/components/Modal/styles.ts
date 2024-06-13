@@ -15,19 +15,14 @@ export const ModalBackdrop = styled.div`
 
 export const ModalContent = styled.div`
   background: ${({ theme }) => theme.colors.modalBackground};
-  padding: 1.25rem;
   border-radius: 0.5rem;
-  width: 25rem;
-  max-width: 100%;
+  width: 90%; // Use relative units for width
+  overflow-y: auto; // Enable scrolling when content overflows
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   animation: fadeIn 0.3s ease-in-out;
 
-  @media (min-width: 480px) {
-    padding: 1.5rem;
-  }
-
   @media (min-width: 768px) {
-    padding: 1.75rem;
+    max-width: 500px;
   }
 
   @keyframes fadeIn {
@@ -47,10 +42,33 @@ export const ModalHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.border};
+  padding: 1rem;
+
+  @media (min-width: 480px) {
+    padding: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    padding: 1.5rem;
+  }
+`
+
+export const ModalBody = styled.div`
+  padding: 1rem;
+
+  @media (min-width: 480px) {
+    padding: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    padding: 1.5rem;
+  }
 `
 
 export const ModalTitle = styled.h3`
   margin: 0;
+  font-size: 1.25rem;
 `
 
 export const CloseButton = styled.button`

@@ -10,6 +10,7 @@ declare module 'styled-components' {
       background: string
       backgroundSecondary: string
       backgroundLight: string
+      border: string
       text: string
       textLight: string
       textLighter: string
