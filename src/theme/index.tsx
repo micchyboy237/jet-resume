@@ -48,6 +48,8 @@ export const lightTheme: DefaultTheme = {
     tableRowBorder: '#ddd',
     tableHeadBackground: '#f5f5f5',
     formBorder: '#ddd',
+    inputBackground: '#f5f5f5',
+    modalBackground: '#ffffff',
   },
   fonts: {
     main: 'Arial, sans-serif',
@@ -75,6 +77,8 @@ export const darkTheme: DefaultTheme = {
     tableRowBorder: '#aaaaaa',
     tableHeadBackground: '#333333',
     formBorder: '#aaaaaa',
+    inputBackground: '#333333',
+    modalBackground: '#1e1e1e',
   },
   fonts: {
     main: 'Arial, sans-serif',

@@ -34,6 +34,7 @@ export const Input = styled.input`
   border-radius: 0.25rem;
   font-family: ${({ theme }) => theme.fonts.main};
   color: ${({ theme }) => theme.colors.text};
+  background-color: ${({ theme }) => theme.colors.inputBackground};
 `
 
 export const TextArea = styled.textarea`
@@ -45,6 +46,7 @@ export const TextArea = styled.textarea`
   font-family: ${({ theme }) => theme.fonts.main};
   color: ${({ theme }) => theme.colors.text};
   min-height: 6.25rem;
+  background-color: ${({ theme }) => theme.colors.inputBackground};
 `
 
 export const Button = styled.button`

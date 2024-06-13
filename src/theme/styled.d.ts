@@ -23,6 +23,8 @@ declare module 'styled-components' {
       tableRowBorder: string
       tableHeadBackground: string
       formBorder: string
+      inputBackground: string
+      modalBackground: string
     }
     fonts: {
       main: string
